@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Scroll exact distance needed to show hidden text */
+@keyframes scroll-exact {
+  0% {
+    transform: translateX(0);
+  }
+  70% {
+    transform: translateX(var(--scroll-distance));
+  }
+  100% {
+    transform: translateX(var(--scroll-distance));
+  }
+}
+
+.animate-scroll-exact {
+  animation: scroll-exact 4s ease-in-out infinite;
+}
