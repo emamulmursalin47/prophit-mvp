@@ -1,7 +1,7 @@
 # Prophit MVP - Prediction Market Tracker
 
 A web application that tracks significant movements in prediction markets connected to news events, powered by Polymarket API.
-
+## Live: https://prophit-phi.vercel.app/ 
 ## Features
 
 - **Movement Detection**: Automatically detects 10%+ market movements in 24 hours
